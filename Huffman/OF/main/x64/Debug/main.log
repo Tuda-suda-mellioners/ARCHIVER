@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\Кто-то\Documents\OF\main\main.c(168,3): warning C4550: вычисление выражения дает функцию, в которой отсутствует список аргументов
+C:\Users\Кто-то\Documents\OF\main\main.c(184,11): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кто-то\Documents\OF\main\main.c(160,16): warning C4101: c: неиспользованная локальная переменная
+  main.vcxproj -> C:\Users\Кто-то\Documents\OF\x64\Debug\main.exe

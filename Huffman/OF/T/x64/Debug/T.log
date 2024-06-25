@@ -1,0 +1,7 @@
+﻿  Tree.c
+C:\Users\Кто-то\Documents\OF\T\Tree.c(11,9): warning C4101: j: неиспользованная локальная переменная
+C:\Users\Кто-то\Documents\OF\T\Tree.c(11,6): warning C4101: i: неиспользованная локальная переменная
+C:\Users\Кто-то\Documents\OF\T\Tree.c(68,12): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кто-то\Documents\OF\T\Tree.c(82,12): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кто-то\Documents\OF\T\Tree.c(88,12): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  T.vcxproj -> C:\Users\Кто-то\Documents\OF\x64\Debug\T.lib

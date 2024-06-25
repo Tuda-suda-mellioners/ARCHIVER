@@ -1,0 +1,9 @@
+﻿  OtherFunctions.c
+C:\Users\Кто-то\Documents\OF\OF\OtherFunctions.c(49,8): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Кто-то\Documents\OF\OF\OtherFunctions.c(156,34): warning C4013: ctime: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\Кто-то\Documents\OF\OF\OtherFunctions.c(156,9): warning C4477: "printf": в строке форматирования "%s" требуется аргумент типа "char *", но вариативный аргумент "1" имеет тип "int"
+C:\Users\Кто-то\Documents\OF\OF\OtherFunctions.c(156,9): warning C4313: printf: конфликт "%s" в строке формата с аргументом 1 типа "int"
+C:\Users\Кто-то\Documents\OF\OF\OtherFunctions.c(146,19): warning C4101: InfoFile: неиспользованная локальная переменная
+C:\Users\Кто-то\Documents\OF\OF\OtherFunctions.c(162,10): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кто-то\Documents\OF\OF\OtherFunctions.c(34): warning C4172: возвращение адреса локальной или временной переменной : r
+  OF.vcxproj -> C:\Users\Кто-то\Documents\OF\x64\Debug\OF.lib

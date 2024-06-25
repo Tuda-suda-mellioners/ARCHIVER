@@ -1,0 +1,4 @@
+﻿  StringsAndTrees.c
+C:\Users\Кто-то\Documents\OF\SAT\StringsAndTrees.c(15,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Кто-то\Documents\OF\SAT\StringsAndTrees.c(14,16): warning C4101: c: неиспользованная локальная переменная
+  SAT.vcxproj -> C:\Users\Кто-то\Documents\OF\x64\Debug\SAT.lib
