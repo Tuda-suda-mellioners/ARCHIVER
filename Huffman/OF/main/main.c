@@ -14,14 +14,14 @@ void Dearchiving(char* before, char* after)
     // Check if the source file for decompressing exists and can be opened
     if (!fopen(before, "rb"))
     {
-        printf("Unfortunately, file for decompressing can't be opened! Check if it exists and locates in the folders 'Debug' and 'arc2'.");
+        printf("Unfortunately, file for decompressing can't be opened! Check if it exists and locates in the folders 'Debug' and 'main'.");
         getchar();
         return;
     }
     // Check if the target file for decompressed data can be opened
     if (!fopen(after, "rb"))
     {
-        printf("Unfortunately, file in which you are going to decompress previous file can't be opened! Check if it exists and locates in the folder 'Debug' and 'arc2'.");
+        printf("Unfortunately, file in which you are going to decompress previous file can't be opened! Check if it exists and locates in the folder 'Debug' and 'main'.");
         getchar();
         return;
     }
@@ -151,13 +151,13 @@ void Archiving(char* before, char* after)
     // Check if the source file for compressing exists and can be opened
     if (!fopen(before, "rb"))
     {
-        printf("Unfortunately, file for compressing can't be opened! Check if it exists and locates in the folder 'Debug' and 'arc2'.");
+        printf("Unfortunately, file for compressing can't be opened! Check if it exists and locates in the folder 'Debug' and 'main'.");
         return;
     }
     // Check if the target archive file can be opened
     if (!fopen(after, "rb"))
     {
-        printf("Unfortunately, file in which you are going to compress previous file can't be opened! Check if it exists and locates in the folder 'Debug' and 'arc2'.");
+        printf("Unfortunately, file in which you are going to compress previous file can't be opened! Check if it exists and locates in the folder 'Debug' and 'main'.");
         return;
     }
     FileToArc = fopen(before, "rb");
@@ -222,7 +222,7 @@ int main(int argc, char* argv[])
 {
     if (argv[1] == NULL)
     {
-        printf(" Hello! Are you going to use 'arc2.exe'?\n If so, please enter the name of files that you want to compress or decompress.\n If you need more information or help, run the program again, enter 'h' and press 'Enter'.\n Good luck!");
+        printf(" Hello! Are you going to use Huffman?\n If so, please enter the name of files that you want to compress or decompress.\n If you need more information or help, run the program again, enter 'h' and press 'Enter'.\n Good luck!");
         getchar();
         return 0;
     }
@@ -230,11 +230,11 @@ int main(int argc, char* argv[])
     {
         printf("\n\tINFORMATION ABOUT THE PROGRAM:\n");
         printf(" This program can compress and decompress files. \n (It is based on Huffman algorithm.)\n Here you can read how to use it:\n");
-        printf(" 0. First of all, add files that you want to compress or decompress in the folder 'Debug' and 'arc2'.\n(File which you want to compress in or decompress from should also be in this folder and have format '.huff')\n");
-        printf(" 1. If you want to compress file, enter the file name and name of a file-archive. \nFor example, 'arc2.exe c book.txt arc.huff'.\n");
-        printf(" 2. If you want to decompress file, enter the file-archive name and a name of file-result. \nFor example, 'arc2.exe d arc.huff book2.txt'.\n");
-        printf(" 3. If you want to see information about file-archive, enter 'i' before file-archive name and press 'Enter'. \nFor example, 'arc2.exe i arc.huff'.\n");
-        printf(" 4. If you want to compress and then decompress file, enter 'c d' before the file name, a file-archive name, and a file-result name. \nFor example, 'arc2.exe c d book.txt arc.huff book2.txt'.\n");
+        printf(" 0. First of all, add files that you want to compress or decompress in the folder 'Debug' and 'main'.\n(File which you want to compress in or decompress from should also be in this folder and have format '.huff')\n");
+        printf(" 1. If you want to compress file, enter the file name and name of a file-archive. \nFor example, 'main.exe c book.txt arc.huff'.\n");
+        printf(" 2. If you want to decompress file, enter the file-archive name and a name of file-result. \nFor example, 'main.exe d arc.huff book2.txt'.\n");
+        printf(" 3. If you want to see information about file-archive, enter 'i' before file-archive name and press 'Enter'. \nFor example, 'main.exe i arc.huff'.\n");
+        printf(" 4. If you want to compress and then decompress file, enter 'c d' before the file name, a file-archive name, and a file-result name. \nFor example, 'main.exe c d book.txt arc.huff book2.txt'.\n");
         printf(" Good luck! Have a good day!");
         getchar();
         return 0;
@@ -311,10 +311,10 @@ int main(int argc, char* argv[])
 	if (strcmp(argv[1], "c") != 0 && strcmp(argv[1], "d") != 0 && strcmp(argv[1], "i") != 0 && strcmp(argv[1], "h") != 0)
 	{
 		printf(" You forgot to write what to do or operation is unknown! The program can only:\n");
-		printf("\t'c' - compress file (example: 'arc2.exe c book.txt arc.huff');\n");
-		printf("\t'i' - information about file (only for file-archives, example: 'arc2.exe i arc.huff');\n");
-		printf("\t'd' - decompress file (example: 'arc2.exe d arc.huff book.txt')\n");
-		printf("\t'c d' - compress and then decompress file (example: 'arc2.exe c book.txt arc.huff book2.txt')\n");
+		printf("\t'c' - compress file (example: 'main.exe c book.txt arc.huff');\n");
+		printf("\t'i' - information about file (only for file-archives, example: 'main.exe i arc.huff');\n");
+		printf("\t'd' - decompress file (example: 'main.exe d arc.huff book.txt')\n");
+		printf("\t'c d' - compress and then decompress file (example: 'main.exe c book.txt arc.huff book2.txt')\n");
 		printf(" Or, maybe, you entered a name of a file without any operations.\n");
 		printf(" Please, try again.\n If you need help, run program againg and enter 'h'.");
 		getchar();
